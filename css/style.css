@@ -36,22 +36,23 @@ main {
   display: flex;
   width: 65vw;
   margin: 15vh auto 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 /*Card section*/
 .card {
   padding: 3rem 2.5rem 3rem 2.5rem;
+  overflow: hidden;
 }
 #card-sedans {
   background: var(--primary-card);
-  border-radius: 3% 0 0 3%;
 }
 #card-suvs {
   background: var(--secondary-card);
 }
 #card-luxury {
   background: var(--tertiary-card);
-  border-radius: 0 3% 3% 0;
 }
 
 /*Buttons section*/
@@ -76,15 +77,6 @@ main {
 }
 #btn-luxury {
   color: var(--tertiary-card);
-}
-
-/*Attribution section*/
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
 
 /*Media query*/
