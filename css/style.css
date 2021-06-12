@@ -2,13 +2,95 @@
   --primary-card: hsl(31, 77%, 52%);
   --secondary-card: hsl(184, 100%, 22%);
   --tertiary-card: hsl(179, 100%, 13%);
-  --paragraphs-color: hsla(0, 0%, 100%, 0.75)
-  --neutral-color: hsl(0, 0%, 95%)
+  --paragraphs-color: hsla(0, 0%, 100%, 0.75);
+  --neutral-color: hsl(0, 0%, 95%);
+  --neutral-color-hover: hsl(0, 0%, 100%);
 }
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+body {
+  font-size: 15px;
+}
+h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  color: var(--neutral-color);
+  padding: 1rem 0 1rem 0;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 400;
+  color: var(--paragraphs-color);
+  padding-bottom: 5.5rem;
+}
+a {
+  text-decoration: none;
+}
+
+/*Main section*/
+main {
+  display: flex;
+  width: 65vw;
+  margin: 15vh auto 0 auto;
+}
+
+/*Card section*/
+.card {
+  padding: 3rem 2.5rem 3rem 2.5rem;
+}
+#card-sedans {
+  background: var(--primary-card);
+  border-radius: 3% 0 0 3%;
+}
+#card-suvs {
+  background: var(--secondary-card);
+}
+#card-luxury {
+  background: var(--tertiary-card);
+  border-radius: 0 3% 3% 0;
+}
+
+/*Buttons section*/
+.btn {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background: var(--neutral-color);
+  border-radius: 20px;
+  border-style: none;
+  width: 8rem;
+  height: 2.5rem;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: var(--neutral-color-hover);
+}
+#btn-sedans {
+  color: var(--primary-card);
+}
+#btn-suvs {
+  color: var(--secondary-card);
+}
+#btn-luxury {
+  color: var(--tertiary-card);
+}
+
+/*Attribution section*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*Media query*/
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
